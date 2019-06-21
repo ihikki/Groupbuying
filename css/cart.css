@@ -1,0 +1,264 @@
+body,html{
+    height: 100%;
+    background-color:#f0f0f0;
+    /* overflow: hidden; */
+}
+.main{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.head{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 40px;
+    background:rgba(65,179,255,0.8);
+    margin:0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.head .backIndex{
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.back{
+
+    color: #fff;
+    font-size: 14px;
+}
+
+.back::before{
+    content: "";
+    width:12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top:15px;
+    border-left:2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.GBuytitle{
+    line-height: 40px;
+    color:#fff;
+    font-size: 16px;
+}
+
+.area{
+    position: absolute;
+    right: 10px;
+    top:0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.area a{
+    color: #fff;
+}
+.searchBox{
+    position: relative;
+    width: 80%;
+    height: 30px;
+    margin:10px auto;
+    border-radius: 20px;
+    background: #fff;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.shop{
+    width: 100%;
+    margin-top:10px;
+    background: #fff;
+    border-top:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+}
+
+.shop_title{
+    background: #fff;
+    height: 34px;
+    position: relative;
+}
+
+.shop .left_con{
+    position: absolute;
+    width: 40px;
+    top:0;
+    left:0;
+}
+
+.shop .right_con{
+    width:100%;
+    padding-left:40px;
+    line-height: 34px;
+}
+
+.shop .checked_box{
+    background-image: url("../img/unchecked.png");
+    background-repeat: no-repeat;
+    background-size:21px 21px;
+    width:40px;
+    height: 34px;
+    display: block;
+    padding:7px 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+
+.shop .checked_box[checked]{
+    background-image: url("../img/checked.png")
+}
+
+.shop_con{
+    width: 100%;
+}
+
+.product{
+    position: relative;
+    padding:10px 0;
+    border-top:1px solid #e0e0e0;
+}
+.pro_img{
+    float: left;
+    width: 100px;
+    height: 80px;
+}
+
+.pro_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.product_info{
+    overflow: hidden;
+    padding:0 10px;
+}
+
+.product_info .info_name{
+    height: 30px;
+    font-size:13px;
+    line-height: 15px;
+    overflow: hidden;
+    display: block;
+    color: #333;
+}
+
+.item_price{
+    float: left;
+    width: 100%;
+}
+.item_price .item_nowprice{
+    color: #f52020;
+    font-size: 16px;
+}
+
+.item_price .item_oldprice{
+    color: #999;
+    font-size: 11px;
+    text-decoration: line-through;
+}
+
+.info_option .change_num{
+    float: left;
+}
+.info_option .delete_btn{
+    float: right;
+}
+
+.change_num span{
+    float: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    /* border:1px solid #e0e0e0; */
+    text-align: center;
+}
+
+.change_num span:nth-child(1){
+    background: url("../img/minus.png") no-repeat;
+    background-size: 24px;
+}
+.change_num span:nth-child(3){
+    background: url("../img/plus.png") no-repeat;
+    background-size: 24px;
+}
+.change_num input{
+    float: left;
+    height: 24px;
+    width: 36px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 24px;
+    border:1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.delete_btn .delete_down{
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image:url("../img/Trash_Empty.png");
+    background-size:22px 22px;
+}
+
+.deleteMask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   min-height:700px; 
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    display: none;
+}
+
+.delete_con{
+    margin:40% auto;
+    width: 80%;
+    height: 20%;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.delete_con p{
+    background: #53acf3;
+}
+.delete_con span{
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+
+    border-radius: 5px;
+}
+.delete_con div{
+    display: inline-block;
+    margin: 30px auto;
+}
+.cannel_delete{
+    background: #53acf3;
+    margin-right: 30px;
+}
+.delete_con .delete{
+    background: #f52020;
+}

@@ -1,0 +1,40 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    font-size: 14px;
+    font-family: "microsoft YaHei";
+    color: #333;
+}
+a{
+    font-size: 14px;
+    text-decoration: none
+}
+ol,ul{
+    list-style: none;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+}
+
+.clearfix::before,.clearfix::after{
+    content: "";
+    height: 0;
+    display: block;
+    line-height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+img{
+    display: block;
+    border:none;
+}
